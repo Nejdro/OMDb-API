@@ -13,7 +13,7 @@ const App = () => {
   const [wishlist, setWishList] = useState([]);
 
   const getData = async (searchValue) => {
-    const url = `http://www.omdbapi.com/?s=${searchValue}&apikey=403f966e`;
+    const url = `https://www.omdbapi.com/?s=${searchValue}&apikey=403f966e`;
     const response = await fetch(url);
     const data = await response.json();
     if (data.Search) {
