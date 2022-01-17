@@ -60,8 +60,17 @@ const App = () => {
             handleWishClick={addWishList}
           />
         </div>
-        
-        
+        <div>
+          <Heading heading={"Wish List"} />
+
+          <div className="row">
+            <MovieList
+              movies={wishlist}
+              handleWishClick={removeWishList}
+              favouriteComponent={RemoveWish}
+            />
+          </div>
+        </div>
       </div>
     </div>
   );
